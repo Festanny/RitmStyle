@@ -188,6 +188,9 @@ section.banner {
     border-radius: 10px;
     opacity: .3;
 }
+.reviews .reviewsBlock .info-block .item.active {
+    opacity: 1;
+}
 .reviews .reviewsBlock .info-block .item .name {
     font-weight: bold;
     margin-bottom: 20px;
