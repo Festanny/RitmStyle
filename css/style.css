@@ -187,6 +187,7 @@ section.banner {
     background-color: var(--accent);
     border-radius: 10px;
     opacity: .3;
+    transition: all .3s;
 }
 .reviews .reviewsBlock .info-block .item.active {
     opacity: 1;

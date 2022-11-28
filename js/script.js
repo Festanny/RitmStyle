@@ -5,6 +5,10 @@ $('.reviews-slider').slick({
 })
 
 sliderSecondBlock()
+$('.reviews .reviewsBlock .slick-arrow').on('click', function() {
+    sliderSecondBlock()
+})
 function sliderSecondBlock() {
-    $('.reviews .reviewsBlock .info-block .item.slick-active').eq(1).addClass('active');
+    $('.reviews .reviewsBlock .info-block .item.active').removeClass('active')
+    $('.reviews .reviewsBlock .info-block .item.slick-active').eq(1).addClass('active')
 }
