@@ -12,6 +12,7 @@ body {
     color: var(--white);
     padding: 0;
     margin: 0;
+    font-family: 'Proxima Nova', sans-serif;
 }
 
 a {
@@ -203,4 +204,35 @@ section.banner {
 }
 .reviews .reviewsBlock .info-block .item .text p:last-of-type {
     margin-bottom: 0;
+}
+.aboutUs .aboutUsBlock .info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.aboutUs .aboutUsBlock .info-block .item .text {
+    padding: 17px 0;
+}
+.aboutUs .aboutUsBlock .info-block .item .text .title {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.aboutUs .aboutUsBlock .info-block .item .text .desc {
+    font-weight: 300;
+}
+.aboutUs .aboutUsBlock .info-block .item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 84px;
+}
+.aboutUs .aboutUsBlock .info-block .item .imgBlock img {
+    width: 100%;
+    border-radius: 10px;
+}
+.aboutUs .aboutUsBlock .info-block .item:nth-child(2n) .text {
+    order: 2;
+}
+.aboutUs .aboutUsBlock .info-block .item:nth-child(2n) .imgBlock {
+    order: 1;
 }
