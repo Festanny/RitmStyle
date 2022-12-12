@@ -236,3 +236,55 @@ section.banner {
 .aboutUs .aboutUsBlock .info-block .item:nth-child(2n) .imgBlock {
     order: 1;
 }
+
+.price .priceBlock .item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 130px;
+    align-items: center;
+}
+.price .priceBlock .item .imgBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.price .priceBlock .item .imgBlock img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.price .priceBlock .item .imgBlock span {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+}
+.price .item .priceInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.price .item .priceInfo .service {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 23px;
+    padding-left: 40px;
+    font-size: 18px;
+}
+.price .item .priceInfo .service::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 9px;
+    background-image: url('../img/leaf-left-blue.svg');
+    background-size: contain;
+    transform: translateY(50%);
+}
+
+.price .item .priceInfo .service .priceMoney {
+    font-family: 'El Messiri', sans-serif;
+}
