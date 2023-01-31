@@ -63,6 +63,7 @@ header .header {
 
 .btnA-white {
     background-color: var(--white);
+    color: var(--accent)
 }
 
 section.banner {
@@ -423,4 +424,54 @@ section.banner {
 }
 .newsItemSection .info-block .item .text {
     font-weight: 100;
+}
+
+.addressSection .info-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-auto-rows: minmax(390px, auto); */
+    column-gap: 48px;
+    row-gap: 24px;
+}
+.addressSection .info-block .item {
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--accent);
+}
+.addressSection .info-block .item.map .img {
+    width: 100%;
+    height: 100%;
+}
+.addressSection .info-block .item.map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.addressSection .info-block .item.map {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+.addressSection .info-block .item:not(.map) {
+    padding: 35px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+}
+.addressSection .info-block .item .address {
+    margin-bottom: 20px;
+    font-family: 'El Messiri', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+.addressSection .info-block .item .info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.addressSection .info-block .item .info .block {
+    display: flex;
+    gap: 20px;
 }
