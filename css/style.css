@@ -387,3 +387,40 @@ section.banner {
     font-family: 'El Messiri', sans-serif;
     font-size: 21px;
 }
+.footer.line {
+    border-top: 1px solid var(--white);
+    margin-top: 70px;
+}
+.header.line {
+    border-bottom: 1px solid var(--white);
+}
+
+.newsItemSection .newsItemBlock {
+    padding: 0;
+}
+.newsItemSection .info-block {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    gap: 100px;
+}
+.newsItemSection .info-block .item.imgNews img {
+    width: 100%;
+    border-radius: 10px;
+}
+.newsItemSection .info-block .item .date {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: var(--accent);
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 45px;
+}
+.newsItemSection .info-block .item .titleNews {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.newsItemSection .info-block .item .text {
+    font-weight: 100;
+}
