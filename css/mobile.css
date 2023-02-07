@@ -6,4 +6,128 @@
         grid-row: span 1;
         height: 350px;
     }
+    .reviews .reviewsBlock .info-block .item.slick-active {
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 991px) {
+    header .header {
+        justify-content: center;
+    }
+    .banner .bannerBlock {
+        padding: 120px 30px;
+    }
+    .session .sessionBlock .info-block {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .aboutUs .aboutUsBlock .info-block .item {
+        gap: 10px;
+    }
+    .aboutUs .aboutUsBlock .info-block .item,
+    .price .priceBlock .item {
+        grid-template-columns: 1fr;
+    }
+    .aboutUs .aboutUsBlock .info-block .item:nth-child(2n) .text {
+        order: 1;
+    }
+    .aboutUs .aboutUsBlock .info-block .item:nth-child(2n) .imgBlock {
+        order: 2;
+    }
+    .price .priceBlock .item {
+        gap: 50px;
+    }
+    .addressSection .info-block {
+        gap: 24px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .session .sessionBlock .info-block {
+        grid-template-columns: 1fr;
+    }
+    .session .sessionBlock .info-block .item:first-of-type {
+        grid-row: 1;
+    }
+    .session .sessionBlock .info-block .item:first-of-type {
+        border-bottom: 0;
+    }
+    .title__main {
+        margin-bottom: 70px;
+    }
+    .addressSection .info-block .item:not(.map) {
+        padding: 25px;
+    }
+    .addressSection .info-block .item .address {
+        font-size: 20px;
+    }
+    .banner .bannerBlock h1 {
+        font-size: 50px;
+    }
+    .title__main {
+        font-size: 38px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .reviews .reviewsBlock .info-block {
+        margin: 0 25px;
+    }
+    header .header nav ul {
+        justify-content: center;
+        row-gap: 10px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .title__block::before,
+    .title__block::after {
+        display: none;
+    }
+    .addressSection .info-block {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    header .header {
+        gap: 15px;
+    }
+    .title__main {
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+    .aboutUs .aboutUsBlock .info-block .item .text {
+        padding: 0;
+    }
+}
+@media screen and (max-width: 400px) {
+    .banner .bannerBlock h1 {
+        font-size: 40px;
+    }
+    .banner .bannerBlock {
+        padding: 30px 15px;
+    }
+    .banner .bannerBlock span {
+        font-size: 22px;
+    }
+    section {
+        padding: 60px 0;
+    }
+}
+@media screen and (max-width: 350px) {
+    body {
+        font-size: 14px;
+    }
+    .title__main {
+        font-size: 30px;
+    }
+    .session .sessionBlock .info-block .item {
+        min-height: 190px;
+    }
+    .session .sessionBlock .info-block .item {
+        font-size: 20px;
+    }
+    .reviews .reviewsBlock .info-block .item {
+        padding: 20px;
+    }
+    .reviews .reviewsBlock .info-block .item .text p {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
 }
