@@ -11,6 +11,9 @@
     }
 }
 @media screen and (max-width: 991px) {
+    .blogSection .info-block .block {
+        grid-template-columns: 1fr;
+    }
     header .header {
         justify-content: center;
     }
@@ -86,6 +89,9 @@
         justify-content: center;
         row-gap: 10px;
     }
+    .blogSection {
+        margin: 0 calc(1.5rem * 0.5);
+    }
 }
 @media screen and (max-width: 500px) {
     .title__block::before,
@@ -109,6 +115,9 @@
     }
     .newsSection .info-block {
         grid-template-columns: 1fr;
+    }
+    .blogSection .info-block .block {
+        padding: 20px;
     }
 }
 @media screen and (max-width: 400px) {

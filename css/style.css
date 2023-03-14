@@ -480,3 +480,45 @@ section.banner {
     display: flex;
     gap: 20px;
 }
+
+.blogSection .blogBlock {
+    padding: 0;
+}
+.blogSection .info-block {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 45px;
+}
+.blogSection .info-block .block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    row-gap: 30px;
+    padding: 50px 60px;
+    border-radius: 20px;
+    border: 2px solid var(--accent);
+}
+.blogSection .info-block .item.imgNews img {
+    width: 100%;
+    border-radius: 10px;
+}
+.blogSection .info-block .item .date {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: var(--accent);
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.blogSection .info-block .item .titleNews {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.blogSection .info-block .item .text {
+    font-weight: 100;
+}
+.blogSection .info-block .item .btnA {
+    margin-top: 40px;
+}
