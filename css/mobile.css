@@ -65,6 +65,18 @@
     .title__main {
         font-size: 38px;
     }
+    .newsItemSection .info-block .item .date {
+        margin-bottom: 15px;
+    }
+    .newsItemSection .info-block {
+        gap: 30px;
+    }
+    .newsItemSection .info-block {
+        grid-template-columns: 1fr;
+    }
+    .newsItemSection {
+        margin: 0 calc(1.5rem * 0.5);
+    }
 }
 @media screen and (max-width: 575px) {
     .reviews .reviewsBlock .info-block {
@@ -94,6 +106,9 @@
     }
     .aboutUs .aboutUsBlock .info-block .item .text {
         padding: 0;
+    }
+    .newsSection .info-block {
+        grid-template-columns: 1fr;
     }
 }
 @media screen and (max-width: 400px) {
